@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Revisão</title>
+</head>
+<body>
+
+
+<style>
+       /* Área do CSS */
+ input[type="number"] {
+            width: 250px;}   /*definindo tamanho do campo dos inputs "number" */
+        
+        h1{text-decoration: underline;}
+        
+        fieldset{
+            width: 50em;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        background-color: rgb(201, 201, 201);}
+        
+        
+        
+         
+        
+</style>
+
+<center>
+    <form method="post" action="esfera.php">
+        <fieldset>
+                <h1>temperatura</h1>
+            <label for="raio">Digite o raio de uma esfera</label>
+            <input type="number" id="raio" name="raio" placeholder="Digite o raio" required>
+            <br><br>
+            <label for="perimetro">Digite o perimetro de uma esfera</label>
+            <input type="number" id="perimetro" name="perimetro" placeholder="Digite o perimetro" >
+
+            <br><br>
+            <br><br>
+            <input type="submit" value="Calcular">
+         </fieldset>
+     </form>
+</center>
+<br><br>
+
+<center>
+    <form action="verificacao.php" method="post">
+        <fieldset>
+            <h1>Teste Positivo ou negativo</h1>
+            <label for="valor">Digite um número para verificar</label>
+            <input type= "number" id="valor" name="valor" placeholder="Digite um número" required>
+            <br><br>
+            <input type="submit" value="Verificar">
+        </fieldset>
+    </form>
+</center>
+
+<br><br>
+<center>
+    <form method="post" action="media.php">
+        <fieldset id="D">
+            <h1>Média</h1>
+        <label for="numero1">Digite o primeiro número:</label>
+        <input type="number" id="numero1" name="numero1" placeholder="Digite um número" required>
+        <br><br>
+        <label for="numero2">Digite o segundo número:</label>
+        <input type="number" id="numero2" name="numero2" placeholder="Digite um número"  required>
+        <br><br>
+        <label for="numero3">Digite o segundo número:</label>
+        <input type="number" id="numero3" name="numero3" placeholder="Digite um número"  required>
+        <br><br>
+        <label for="operacao">Escolha qual tipo de média para cálculo:</label>
+        <select id="operacao" name="operacao" required>
+            <option value="A">A</option>   <!-- Aritimética --> 
+            <option value="P">P</option>    <!-- Ponderada --> 
+            <option value="H">H</option>      <!-- Harmonica --> 
+        </select>
+        <br><br>
+        <input type="submit" value="Calcular">
+    </fieldset>
+    </form>
+</center>
+
+<center>
+    <form method="post" action="bhaskara.php">
+        <fieldset>
+            <h1>Bhaskara</h1>
+           <label for="a">Valor de a:</label>
+           <input type="number" id="a" name="a" required><br><br>
+
+            <label for="b">Valor de b:</label>
+            <input type="number" id="b" name="b" required><br><br>
+
+            <label for="c">Valor de c:</label>
+            <input type="number" id="c" name="c" required><br><br>
+
+            <input type="submit" value="Calcular">
+            </fieldset>
+    </form>
+</center>
+
+
+
+<center>
+    <form action="tempo.php" method="post">
+        <fieldset>
+            <h1>Conversão de Tempo</h1>
+            <label for="segundos">Digite o tempo em segundos:</label>
+            <input type="number" id="segundos" name="segundos" placeholder="Digite o tempo em segundos" required>
+            <br><br>
+            <input type="submit" value="Converter">
+        </fieldset>
+    </form>
+</center>
+
+<center>
+    <form action="idade.php" method="post">
+        <fieldset>
+                <h1>Conversão de Idade</h1>
+                <label for="anos">Anos:</label>
+                <input type="number" id="anos" name="anos" placeholder="Digite os anos" required><br><br>
+
+                <label for="meses">Meses:</label>
+                <input type="number" id="meses" name="meses" placeholder="Digite os meses" required><br><br>
+
+                <label for="dias">Dias:</label>
+                <input type="number" id="dias" name="dias" placeholder="Digite os dias" required><br><br>
+                
+                <input type="submit" value="Calcular">
+        </fieldset>
+    </form>
+</center>
+
+
+<center>
+    <form action="perfeito.php" method="post">
+        <fieldset>
+            <h1>Número Perfeito</h1>
+            <label for="num">Número:</label>
+            <input type="number" id="num" name="num" placeholder="Digite um Número" required> <br><br>
+            <input type="submit" value="Testar">
+        </fieldset>        
+    </form>
+</center>
+
+<center>
+    <form action="nadador.php" method="post">
+        <fieldset>
+            <h1>Categoria do Nadador</h1>
+            <label for="cat">Idade:</label>
+            <input type="number" id="cat" name="cat" placeholder="Digite a idade" required> <br><br>
+            <input type="submit" value="Categorizar">
+        </fieldset>        
+    </form>
+</center>
+
+<center>
+    <form action="PouN.php" method="post">
+        <fieldset>
+            <h1>Postivo ou Negativo?</h1>
+            <label for="N">Número</label>
+            <input type="number" id="N" name="N" placeholder="Digite um Número" required> <br><br>
+            <input type="submit" value="Verificar">
+        </fieldset>        
+    </form>
+</center>
+
+<center>
+    <form action="PI.php" method="post">
+        <fieldset>
+            <h1>Impar ou Par ?</h1>
+            <label for="N">Número</label>
+            <input type="number" id="N" name="N" placeholder="Digite um Número" required> <br><br>
+            <input type="submit" value="Verificar">
+        </fieldset>        
+    </form>
+</center>
+
+<center>
+    <form action="categoria.php" method="post">
+        <fieldset>
+            <h1>Notas</h1>
+            <label for="N">Número</label>
+            <input type="number" id="N" name="N" placeholder="Digite a nota da média final" step="0.01" required> 
+            <br><br>
+            <input type="submit" value="Verificar">
+        </fieldset>
+    </form>
+</center>
+
+<center>
+    <form action="peso.php" method="post">
+        <fieldset>
+            <h1>Peso Ideal</h1>
+            <label for="N">Altura</label>
+            <input type="number" id="N" name="N" placeholder="Digite a sua altura" step="0.01" required> <br><br>
+           <label for="sexo">Escolha seu sexo correspondente: 
+            <select name="sexo" id="sexo">
+                <option value="masc">Masculino</option>
+                <option value="fem">Feminino</option>
+            </select>
+           </label> 
+            <br><br>
+            <input type="submit" value="Verificar">
+            
+        </fieldset>
+    </form>
+</center>
+
+
+<center>
+    <form action="ordenar.php" method="post">
+        <fieldset>
+            <h1>Ordenar Valores</h1>
+            <label for="valor1">Valor 1:</label>
+            <input type="number" id="valor1" name="valor1" placeholder="Digite o primeiro valor" required> <br><br>
+            <label for="valor2">Valor 2:</label>
+            <input type="number" id="valor2" name="valor2" placeholder="Digite o segundo valor" required> <br><br>
+            <label for="valor3">Valor 3:</label>
+            <input type="number" id="valor3" name="valor3" placeholder="Digite o terceiro valor" required> <br><br>
+            <input type="submit" value="Ordenar">
+        </fieldset>
+    </form>
+</center>
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Verificar Triângulo</title>
+</head>
+<body>
+    <center>
+        <form action="triangulo.php" method="post">
+            <fieldset>
+                <h1>Verificar Triângulo</h1>
+                <label for="x">Lado X:</label>
+                <input type="number" step="0.01" id="x" name="x" placeholder="Digite o comprimento do lado X" required> <br><br>
+                <label for="y">Lado Y:</label>
+                <input type="number" step="0.01" id="y" name="y" placeholder="Digite o comprimento do lado Y" required> <br><br>
+                <label for="z">Lado Z:</label>
+                <input type="number" step="0.01" id="z" name="z" placeholder="Digite o comprimento do lado Z" required> <br><br>
+                <input type="submit" value="Verificar">
+            </fieldset>
+        </form>
+    </center>
+</body>
+</html>
+
+</body>
+</html>
+
+
