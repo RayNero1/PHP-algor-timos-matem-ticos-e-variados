@@ -1,1 +1,2 @@
-# PHP-algor-timos-matem-ticos-e-variados
+# PHP-algortimos matemticos e variados
+
